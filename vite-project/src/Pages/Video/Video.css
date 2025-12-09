@@ -1,0 +1,13 @@
+.play-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 2%;
+    background: #f9f9f9;
+}
+
+@media (max-width:900px) {
+    .play-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

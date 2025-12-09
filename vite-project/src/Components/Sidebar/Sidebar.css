@@ -1,0 +1,124 @@
+
+.sidebar {
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.sidebar::-webkit-scrollbar {
+    height: 5px; 
+    width: 8px; 
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Keep your existing styles */
+.shortcut-links img {
+    width: 20px;
+    margin-right: 20px;
+}
+.side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.sidebar hr {
+    border: 0.5px solid #ccc;
+    height: 1px;
+    width: 85%;
+}
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+.subscribed-list img {
+    border-radius: 50%;
+    width: 25px;
+    margin-right: 20px;
+}
+.small-sidebar {
+    width: 5%;
+}
+.small-sidebar p {
+    display: none;
+}
+.small-sidebar h3 {
+    display: none;
+}
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
+.side-link.active img {
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
+}
+.more-youtube h3 {
+    font-size: 16px;
+    margin: 10px 1px;
+    color: #1d1a1a;
+    font-weight: 800;
+}
+.more-youtube div {
+    font-size: 14px;
+    color: #121212;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.sidebar-footer {
+    font-size: 12px;
+    color: #606060;
+    padding: 10px 16px;
+    line-height: 1.5;
+}
+.sidebar-footer .footer-links {
+    margin: 4px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.sidebar-footer .footer-links span,
+.sidebar-footer .footer-links a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #606060;
+}
+.sidebar-footer .footer-links span:hover,
+.sidebar-footer .footer-links a:hover {
+    text-decoration: underline;
+}
+.sidebar-footer .footer-copy {
+    margin-top: 6px;
+    font-weight: 500;
+}
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
